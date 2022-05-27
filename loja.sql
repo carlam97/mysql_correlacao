@@ -38,6 +38,7 @@ select nome, codigo_fornecedor, razao from produtos
 inner join fornecedores 
 on produtos.codigo_fornecedor = fornecedores.codigo;
 
+/* o left permite que todos os dados da tabela esquerda sejam mostrados mesmo que não haja relação com a tabela da direita */
 select * from produtos
 left join fornecedores 
 on produtos.codigo_fornecedor = fornecedores.codigo;
